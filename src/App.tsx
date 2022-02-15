@@ -25,28 +25,22 @@ let lotsOfPeople: Person[]; */
 
 //let personName: unknown;
 
-interface Person {
+/* interface Person {
     name: string;
     age?: number;
 }
-interface Guy extends Person {
-    profession: string;
-}
-
-class name extends Person {}
-
+type X = Person & {
+    a: string;
+    b: number;
+}; */
 type X = {
     a: string;
     b: number;
 };
-type Y = X & {
-    c: string;
-    d: number;
-};
-let y: Y = {
-    c: 'Carlos',
-    d: 23,
-};
+interface Person extends X {
+    name: string;
+    age?: number;
+}
 
 function App() {
     return <div className="App">Hello world</div>;
