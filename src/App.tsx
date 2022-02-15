@@ -1,49 +1,12 @@
 import React from 'react';
 import './App.css';
 
-let name: string;
-let age: number | string;
-let isStudent: boolean;
-let hobbies: string[];
-let role: [number, string];
-
-let printName: (name: string) => never;
-/* function printName(name: string) {
-    console.log(name);
-}
-printName('Carlos'); */
-
-/* type Person = {
-    name: string;
-    age?: number;
+const App: React.FC = () => {
+    return (
+        <div className="App">
+            <span className="heading">Taskfy</span>
+        </div>
+    );
 };
-let person: Person = {
-    name: 'Carlos',
-    //age: 23,
-};
-let lotsOfPeople: Person[]; */
-
-//let personName: unknown;
-
-/* interface Person {
-    name: string;
-    age?: number;
-}
-type X = Person & {
-    a: string;
-    b: number;
-}; */
-type X = {
-    a: string;
-    b: number;
-};
-interface Person extends X {
-    name: string;
-    age?: number;
-}
-
-function App() {
-    return <div className="App">Hello world</div>;
-}
 
 export default App;
