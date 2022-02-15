@@ -7,6 +7,15 @@ let isStudent: boolean;
 let hobbies: string[];
 let role: [number, string];
 
+type Person = {
+    name: string;
+    age?: number;
+};
+let person: Person = {
+    name: 'Piyush',
+    //age: 22,
+};
+
 function App() {
     return <div className="App">Hello world</div>;
 }
