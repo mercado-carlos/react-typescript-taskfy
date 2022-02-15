@@ -30,6 +30,19 @@ interface Person {
     age?: number;
 }
 
+type X = {
+    a: string;
+    b: number;
+};
+type Y = X & {
+    c: string;
+    d: number;
+};
+let y: Y = {
+    c: 'Carlos',
+    d: 23,
+};
+
 function App() {
     return <div className="App">Hello world</div>;
 }
