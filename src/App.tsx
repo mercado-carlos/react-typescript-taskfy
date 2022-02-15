@@ -23,7 +23,12 @@ let person: Person = {
 };
 let lotsOfPeople: Person[]; */
 
-let personName: unknown;
+//let personName: unknown;
+
+interface Person {
+    name: string;
+    age?: number;
+}
 
 function App() {
     return <div className="App">Hello world</div>;
