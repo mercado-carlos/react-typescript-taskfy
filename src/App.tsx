@@ -15,6 +15,7 @@ let person: Person = {
     name: 'Piyush',
     //age: 22,
 };
+let lotsOfPeople: Person[];
 
 function App() {
     return <div className="App">Hello world</div>;
