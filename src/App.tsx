@@ -29,6 +29,9 @@ interface Person {
     name: string;
     age?: number;
 }
+interface Guy extends Person {
+    profession: string;
+}
 
 type X = {
     a: string;
