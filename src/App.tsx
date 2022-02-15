@@ -7,13 +7,19 @@ let isStudent: boolean;
 let hobbies: string[];
 let role: [number, string];
 
+let printName: (name: string) => void;
+/* function printName(name: string) {
+    console.log(name);
+}
+printName('Carlos'); */
+
 /* type Person = {
     name: string;
     age?: number;
 };
 let person: Person = {
-    name: 'Piyush',
-    //age: 22,
+    name: 'Carlos',
+    //age: 23,
 };
 let lotsOfPeople: Person[]; */
 
