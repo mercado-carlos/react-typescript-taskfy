@@ -33,6 +33,8 @@ interface Guy extends Person {
     profession: string;
 }
 
+class name extends Person {}
+
 type X = {
     a: string;
     b: number;
