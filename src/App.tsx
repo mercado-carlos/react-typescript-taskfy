@@ -36,7 +36,7 @@ const App: React.FC = () => {
         let add;
         let active = todos;
         let complete = completedTodos;
-        // Source Logic
+
         if (source.droppableId === 'TodosList') {
             add = active[source.index];
             active.splice(source.index, 1);
@@ -45,15 +45,14 @@ const App: React.FC = () => {
             complete.splice(source.index, 1);
         }
 
-        // Destination Logic
         if (destination.droppableId === 'TodosList') {
             active.splice(destination.index, 0, add);
         } else {
             complete.splice(destination.index, 0, add);
         }
 
-        setCompletedTodos(complete);
         setTodos(active);
+        setCompletedTodos(complete);
     };
 
     return (
