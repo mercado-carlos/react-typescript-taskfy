@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Todo } from '../model';
 
 import { AiFillEdit, AiFillDelete } from 'react-icons/ai';
@@ -35,6 +35,12 @@ const SingleTodo = ({ todo, todos, setTodos }: Props) => {
             )
         );
     };
+
+    const inputRef = useRef<HTMLInputElement>(null);
+
+    useEffect(() => {
+        inputRef.current?.focus();
+    }, [edit]);
 
     return (
         <form
